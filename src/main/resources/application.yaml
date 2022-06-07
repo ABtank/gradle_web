@@ -1,2 +1,13 @@
 server:
   port: 8189
+spring:
+  application:
+    name: gradle_web
+  config:
+    import: optional:consul:localhost:8500
+  cloud:
+    consul:
+      discovery:
+        health-check-path: /isalive
+        health-check-interval: 2s
+        instance-id: ${spring.application.name}:${random.value}

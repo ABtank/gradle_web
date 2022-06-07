@@ -22,3 +22,11 @@
 ```
 java -jar .\build\libs\gradle_web-0.0.1-SNAPSHOT.jar
 ```
+
+# Consul
+- Скачать и установить (настроить переменные среды)
+- Запустить
+```
+consul agent -dev
+```
+- По умолчанию запускается на [localhost:8500](http://localhost:8500/ui/) 
